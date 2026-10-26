@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《月下獨酌》範文導讀｜漢華中學中國語文科</title>
+<style>
+
+:root{
+  --blue:#2563eb;--blue-dark:#1d4ed8;--blue-soft:#eff6ff;--blue-mid:#dbeafe;
+  --ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--card:#fff;--bg:#f4f6fb;
+  --ok:#16a34a;--ok-bg:#dcfce7;--bad:#dc2626;--bad-bg:#fee2e2;--warn:#b45309;--warn-bg:#fef3c7;
+  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","PingFang HK","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65}
+a{color:var(--blue)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px 12px;z-index:100;border-radius:8px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(37,99,235,.06)}
+.topbar-inner{max-width:880px;margin:0 auto;padding:10px 14px 8px}
+.brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
+.brand .school{font-size:.85rem;color:var(--blue);font-weight:700;letter-spacing:.02em}
+.brand h1{margin:0;font-size:1.15rem;font-weight:800}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 12px;border-radius:999px;background:var(--blue-soft);color:var(--blue-dark);text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid transparent}
+.nav a:hover,.nav a:focus{background:var(--blue);color:#fff;outline:none}
+main{max-width:880px;margin:0 auto;padding:16px 14px 80px}
+.sec{margin:22px 0 28px;scroll-margin-top:110px}
+.sec>h2{margin:0 0 12px;font-size:1.35rem;color:var(--blue-dark);padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec>h3,.card h3{margin:16px 0 8px;font-size:1.08rem}
+.card{background:var(--card);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--blue-soft);color:var(--blue-dark);border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700;margin-right:4px}
+.muted{color:var(--muted);font-size:.95rem}
+.person{border-left:4px solid var(--blue);padding-left:12px;margin:10px 0}
+.story{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fafbff}
+.story h4{margin:0 0 8px;color:var(--blue-dark)}
+.story dl{margin:0;display:grid;grid-template-columns:4.5em 1fr;gap:4px 8px}
+.story dt{font-weight:700;color:var(--muted)}.story dd{margin:0}
+.story .baihua{margin:10px 0 0;padding:10px 12px;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 10px 10px 0;font-size:.95rem;line-height:1.65;color:#14532d}
+.story .baihua strong{color:#166534}
+.vocab{display:grid;gap:8px}
+.vocab-item{display:grid;grid-template-columns:minmax(7em,auto) 1fr;gap:8px 12px;padding:10px 12px;background:#fafbff;border-radius:10px;border:1px solid var(--line)}
+.vocab-item b{color:var(--blue-dark)}
+@media(max-width:560px){.vocab-item{grid-template-columns:1fr}}
+.struct ul{margin:6px 0;padding-left:1.2em}.struct li{margin:4px 0}
+.student-form{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px}
+@media(max-width:640px){.student-form{grid-template-columns:1fr}}
+label.field{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+input.field,select.field{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:2px solid #d1d5db;border-radius:10px;background:#fff}
+input.field:focus,select.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{flex:1;min-width:120px;min-height:48px;font:inherit;font-weight:700;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--blue);cursor:pointer}
+.tabs button.active,.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.prog-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.95rem;color:var(--muted);margin:8px 0 4px}
+.bar{height:10px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+.bar>div{height:100%;background:var(--blue);width:0;transition:width .3s}
+.overall{background:var(--blue-soft);border:1px solid var(--blue-mid);border-radius:12px;padding:12px 14px;margin:12px 0}
+.opt{display:flex;align-items:flex-start;gap:10px;min-height:56px;padding:12px;margin:8px 0;border:2px solid #d1d5db;border-radius:12px;background:#fff;cursor:pointer;text-align:left}
+.opt input{width:22px;height:22px;margin-top:3px;flex:none}
+.opt.sel{border-color:var(--blue);background:var(--blue-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.stem{font-size:1.08rem;font-weight:700;margin:0 0 10px}
+.fb{margin-top:12px;padding:12px;border-radius:10px}
+.fb.ok{background:var(--ok-bg)}.fb.bad{background:var(--bad-bg)}
+.btn{font:inherit;font-weight:700;min-height:52px;width:100%;margin-top:12px;border:0;border-radius:12px;background:var(--blue);color:#fff;cursor:pointer}
+.btn:disabled{background:#9ca3af;cursor:not-allowed}
+.btn.sec{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.btn.ok{background:var(--ok)}
+.btn.warn{background:#d97706}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:500px){.btn-row{grid-template-columns:1fr}}
+.big{font-size:1.8rem;font-weight:800;text-align:center;margin:8px 0}
+.rv{border-top:1px solid var(--line);padding:10px 0}.rv .t{font-weight:700}.c{color:#15803d}.w{color:#b91c1c}
+.note{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 12px;border-radius:0 10px 10px 0;margin:10px 0;font-size:.95rem}
+.video-box{aspect-ratio:16/9;background:linear-gradient(135deg,#dbeafe,#eff6ff);border:2px dashed #93c5fd;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;text-align:center;color:var(--muted)}
+.video-box iframe{width:100%;height:100%;border:0;border-radius:12px}
+.video-wrap{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.footer{max-width:880px;margin:0 auto;padding:8px 14px 28px;color:var(--muted);font-size:.88rem;text-align:center}
+[hidden]{display:none!important}
+@media print{
+  .topbar{position:static;box-shadow:none}
+  .nav,.btn,#quizPanel .btn,.student-form,input,select,.tabs{display:none!important}
+  body{background:#fff;font-size:14px}
+  .card,.story,.vocab-item{box-shadow:none;border:1px solid #ccc}
+  .sec{break-inside:avoid}
+}
+.classic{font-size:1.05rem;line-height:2;letter-spacing:.02em}
+.classic p{margin:0 0 1em}
+.classic h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.classic .attr{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted);line-height:1.55}
+.classic .poem-line{font-size:1.2rem;font-weight:600;letter-spacing:.08em;text-align:center;margin:0.35em 0}
+.classic .poem-title{text-align:center;font-size:1.25rem;font-weight:800;margin:0 0 4px;color:var(--blue-dark)}
+.classic .poem-author{text-align:center;margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.yuyi{line-height:1.85}
+.yuyi p{margin:0 0 .95em}
+.yuyi h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.sec-head-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px;padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec-head-row h2{margin:0;padding:0;border:0;font-size:1.35rem;color:var(--blue-dark)}
+.btn-toggle{font:inherit;font-weight:700;font-size:.88rem;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer;width:auto;margin:0}
+.btn-toggle:hover,.btn-toggle:focus{background:var(--blue);color:#fff;outline:none}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="school">漢華中學中國語文科</span>
+      <h1>《月下獨酌》範文導讀</h1>
+    </div>
+    <nav class="nav" aria-label="章節導航">
+      <a href="#daodu">導讀</a>
+      <a href="#quanwen">全文</a>
+      <a href="#yuyi">語譯</a>
+      <a href="#zici">重點字詞</a>
+      <a href="#zhangfa">章法／寫作手法</a>
+      <a href="#zice">自測</a>
+      <a href="#shipin">影片</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 1 導讀 ========== -->
+<section class="sec" id="daodu">
+  <h2>一、導讀</h2>
+  <p class="muted">對象：中四至中六　｜　篇章：《月下獨酌》（其一）　｜　作者：李白（唐）　｜　用途：學生自學＋課堂投影</p>
+
+  <div class="card">
+    <h3>背景</h3>
+    <p>李白於唐朝<strong>天寶</strong>年間奉詔入長安，出任<strong>翰林供奉</strong>。他原以為可以一展抱負，其後卻因受權貴排擠而漸為玄宗疏遠，於是<strong>狂歌痛飲</strong>，藉以排解胸中鬱悶。《月下獨酌》組詩（共四首）就是在這樣的背景下寫成；本篇為<strong>其一</strong>。詩中圍繞題目的「<strong>獨</strong>」字着筆，卻忽發奇想——舉杯<strong>邀明月、對影成三人</strong>，寫盡孤獨中的自我排遣，亦流露對酒與月的鍾愛。</p>
+  </div>
+
+  <div class="card">
+    <h3>作者簡介</h3>
+    <div class="person"><span class="pill">作者</span><strong>李白</strong>（公元 701–762），字太白，號青蓮居士。祖籍隴西成紀（今甘肅省秦安一帶），先世遷徙西域，後隨父遷居蜀地。年青時辭親遠遊，漫遊各地，求仙學道，嗜酒任俠。才氣橫溢，擅長各體詩歌，作品豐富，《月下獨酌》《將進酒》《靜夜思》等尤為傳誦，後世譽為「<strong>詩仙</strong>」。</div>
+  </div>
+
+  <div class="card">
+    <h3>記住三個關鍵</h3>
+    <div class="grid3" style="margin-top:10px">
+      <article class="story">
+        <h4>① 獨・三人</h4>
+        <dl>
+          <dt>處境</dt><dd>花間一壺酒，獨酌無相親——無人相伴。</dd>
+          <dt>奇想</dt><dd>舉杯邀明月，對影成三人（己・月・影）。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>開頭就說：花叢間放着一壺酒，我一個人喝，身邊沒有可親近的人。接着忽然奇想——舉起酒杯邀請天上的明月，再面對自己的身影，於是「我、月、影」變成了「三個人」。題目明明是「獨酌」，詩裡卻幻出三人，這正是構思最精奇之處；三人越熱鬧，反而越襯出真正的孤獨。</p>
+      </article>
+      <article class="story">
+        <h4>② 悲喜轉折</h4>
+        <dl>
+          <dt>復獨</dt><dd>月不解飲，影徒隨身 → 仍覺孤單。</dd>
+          <dt>暫歡</dt><dd>暫伴月將影，歌徘徊、舞零亂；醒同歡，醉分散。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>月畢竟不會喝酒，影子也只是空跟着身體動，情感一下子又掉回孤獨。可是詩人說：那就暫時讓月亮和影子陪着我，趁着春天及時行樂吧！於是我唱歌，月亮好像也來回徘徊；我起舞，影子便散亂跳動。清醒時大家一起歡樂，喝醉以後卻又各自散開——歡喜裡仍藏着孤單。整首詩悲喜交替，一步步都扣着「獨」字。</p>
+      </article>
+      <article class="story">
+        <h4>③ 無情・雲漢</h4>
+        <dl>
+          <dt>忘情</dt><dd>永結無情遊——泯除物我之別的忘情之交。</dd>
+          <dt>相期</dt><dd>相約於邈遠銀河（雲漢），自我紓解。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>醉後雖然分散，詩人卻把筆鋒一轉：我要與月光、身影永遠結下「無情」之遊——這裡的「無情」不是冷酷，而是忘掉世俗得失、物我界限的忘情境界。大家相約到遙遠的銀河上再續這段交遊。孤獨沒有困住他，反而見出豁達與高情遠致：能自我排遣，不為現實所困。</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>溫習口訣</h3>
+    <p>花間一壺獨無親，舉杯邀月影三人；月不解飲影徒隨，暫伴將影樂及春；我歌徘徊舞零亂，醒時交歡醉分散；永結無情期雲漢，詩仙太白要記清。</p>
+  </div>
+</section>
+
+<!-- ========== 2 全文 ========== -->
+<section class="sec" id="quanwen">
+  <h2>二、全文</h2>
+  <p class="muted">李白《月下獨酌》（其一）　｜　文本依教育局「指定文言經典學習材料」參考版本</p>
+  <div class="card classic">
+    <div class="poem-title">月下獨酌 (其一)</div>
+    <div class="poem-author">李白</div>
+    <h3>起・獨酌</h3>
+    <p class="poem-line">花間一壺酒，獨酌無相親。</p>
+    <p class="poem-line">舉杯邀明月，對影成三人。</p>
+    <h3>承・復獨</h3>
+    <p class="poem-line">月既不解飲，影徒隨我身。</p>
+    <p class="poem-line">暫伴月將影，行樂須及春。</p>
+    <h3>轉・歌舞</h3>
+    <p class="poem-line">我歌月徘徊，我舞影零亂。</p>
+    <p class="poem-line">醒時同交歡，醉後各分散。</p>
+    <h3>合・永結</h3>
+    <p class="poem-line">永結無情遊，相期邈雲漢。</p>
+    <p class="attr">出處：李白《月下獨酌》（其一）；文本依教育局「指定文言經典學習材料」參考版本（ks4_16b_text.pdf）。註：以上僅就坊間所見資料，提供一個參考版本；教師亦可參考、使用其他版本。</p>
+  </div>
+</section>
+
+<!-- ========== 3 語譯 ========== -->
+<section class="sec" id="yuyi">
+  <div class="sec-head-row">
+    <h2>三、語譯</h2>
+    <button type="button" class="btn-toggle" id="yuyiToggle" aria-controls="yuyiBody" aria-expanded="true">隱藏語譯</button>
+  </div>
+  <div id="yuyiBody">
+  <p class="note">以下語譯供自學參考，考試請以課文原文為準。</p>
+  <div class="card yuyi">
+    <h3>起・獨酌</h3>
+    <p>花叢之間放着一壺酒，我獨自酌飲，沒有可相親近的人。</p>
+    <p>舉起酒杯邀請明月，面對自己的身影，便成了三個人。</p>
+    <h3>承・復獨</h3>
+    <p>月亮既不懂得飲酒，影子也只是徒然跟隨着我的身體。</p>
+    <p>且暫時讓月亮和身影相伴，行樂須趁着春天（美好時光）。</p>
+    <h3>轉・歌舞</h3>
+    <p>我唱歌，月亮彷彿來回徘徊；我起舞，身影便散亂搖動。</p>
+    <p>清醒的時候一同歡樂，醉了以後便各自離散。</p>
+    <h3>合・永結</h3>
+    <p>願永遠結下這忘情的交遊，相約在遙遠的銀河之上。</p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== 4 重點字詞 ========== -->
+<section class="sec" id="zici">
+  <h2>四、重點字詞</h2>
+  <p class="muted">以下重點詞語宜連同課文語境記誦。（注釋參考教育局材料）</p>
+  <div class="card vocab">
+    <div class="vocab-item"><b>相親</b><span>互相親愛、親近。此處指可相親近的人。「獨酌無相親」——獨自飲酒而沒有可相親近的人。</span></div>
+    <div class="vocab-item"><b>三人</b><span>指李白、明月和李白的影子。「舉杯邀明月，對影成三人」。語意出自陶潛《雜詩》：「欲言無予和，揮杯勸孤影。」</span></div>
+    <div class="vocab-item"><b>徒</b><span>徒然、空。「影徒隨我身」——影子只是空自跟隨我的身體。</span></div>
+    <div class="vocab-item"><b>將</b><span>和、共。「暫伴月將影」——暫時與月亮和身影為伴。</span></div>
+    <div class="vocab-item"><b>及春</b><span>趁着春天。及：趁着。「行樂須及春」——行樂須趁着春天。</span></div>
+    <div class="vocab-item"><b>徘徊</b><span>往返迴旋、來回走動。「我歌月徘徊」——我唱歌，月亮彷彿來回徘徊。</span></div>
+    <div class="vocab-item"><b>交歡</b><span>一同歡樂。「醒時同交歡」——清醒時與月、身影一起歡樂。</span></div>
+    <div class="vocab-item"><b>無情</b><span>即忘情，語出《莊子·德充符》，指泯除是非得失、物我之別的境界。「永結無情遊」——與月光和身影（本為無情之物）永遠結伴交遊。</span></div>
+    <div class="vocab-item"><b>相期</b><span>相約。「相期邈雲漢」——（與月和身影）相約於遙遠的銀河之上。</span></div>
+    <div class="vocab-item"><b>邈</b><span>遙遠。○粵音「寞」[mok6]。「相期邈雲漢」。</span></div>
+    <div class="vocab-item"><b>雲漢</b><span>銀漢，即銀河。「相期邈雲漢」——相約在遙遠的銀河。</span></div>
+  </div>
+</section>
+
+<!-- ========== 5 章法／寫作手法 ========== -->
+<section class="sec" id="zhangfa">
+  <h2>五、章法／寫作手法</h2>
+  <div class="card struct">
+    <h3>1. 五言古詩・圍繞「獨」字</h3>
+    <p>本篇為<strong>五言古詩</strong>（組詩四首之其一）。內容可分五部分：起寫獨酌無親；次寫邀月對影成三人；再寫月不解飲、影徒隨身而復歸孤獨；繼寫暫伴月影、歌舞交歡而又醉後分散；終以永結無情遊、相期雲漢收束。全篇悲喜轉折，皆扣題目「獨」字，卻終不為「獨」所囿。</p>
+    <h3>2. 主要寫作手法</h3>
+    <ul>
+      <li><strong>構思精奇</strong>：題本「獨酌」，詩偏幻出三人；月影伴說，反覆推勘，愈形其獨。（孫洙《唐詩三百首》評）</li>
+      <li><strong>擬人</strong>：自「對影成三人」後，多將月、影人格化——月徘徊、影零亂、同交歡、各分散。</li>
+      <li><strong>悲喜轉折</strong>：悲己之獨 → 喜成三人 → 悲月不解飲 → 喜歌舞暫歡 → 悲醉後分散 → 喜永結雲漢，層層推進。</li>
+      <li><strong>層遞構圖</strong>：花間獨飲圖 → 舉杯邀月、對影邀飲圖 → 歌徘徊、舞零亂之三人同樂圖，情景交融。</li>
+      <li><strong>淺近而錘鍊</strong>：語言近乎口語，「純乎天籟」；又煉「暫」（暫得之樂更可貴）、「無情」（呼應不解飲、徒隨身，無情中見有情）等字。</li>
+    </ul>
+    <h3>3. 情志</h3>
+    <p>既抒內心孤獨，亦寫對酒與月的鍾愛；篇末相期雲漢，見自我紓解、不為現實所困的高情遠致。</p>
+    <h3>4. 結構示意</h3>
+    <p>花間獨酌・無相親 → 邀月對影・成三人 → 不解飲・徒隨身 → 暫伴・及春行樂 → 歌徘徊・舞零亂 → 醒交歡・醉分散 → 永結無情・相期雲漢。</p>
+  </div>
+</section>
+
+<!-- ========== 6 自測 ========== -->
+<section class="sec" id="zice">
+  <h2>六、自測</h2>
+  <p class="muted">題目為校本自測（內容理解／字詞解釋／寫作手法各 15 題，合共 45 題）。可先作答；交卷前請填學生資料。</p>
+
+  <div class="card" id="studentCard">
+    <h3>學生資料（交卷必填）</h3>
+    <div class="student-form">
+      <div>
+        <label class="field" for="cls">班別</label>
+        <input class="field" id="cls" name="cls" placeholder="例：4A" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sid">學號</label>
+        <input class="field" id="sid" name="sid" placeholder="例：01" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sname">姓名</label>
+        <input class="field" id="sname" name="sname" placeholder="請輸入姓名" maxlength="20" autocomplete="name" required>
+      </div>
+    </div>
+    <p class="muted" style="margin:8px 0 0">班別可用如 4A、5C、6D；學號請填兩位數字（如 01）。</p>
+  </div>
+
+  <div class="overall" id="overallBox">
+    <div class="prog-row"><strong>整體進度</strong><span id="overallText">0 / 45 題　總分 0</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="45" aria-valuenow="0" id="overallBar"><div id="overallFill"></div></div>
+    <div class="prog-row" style="margin-top:8px;font-size:.9rem">
+      <span>內容理解：<b id="scContent">0</b>/15</span>
+      <span>字詞解釋：<b id="scVocab">0</b>/15</span>
+      <span>寫作手法：<b id="scRhet">0</b>/15</span>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="練習部分">
+    <button type="button" role="tab" id="tab-content" aria-selected="true" aria-controls="panel-quiz" data-sec="content">內容理解（15）</button>
+    <button type="button" role="tab" id="tab-vocab" aria-selected="false" aria-controls="panel-quiz" data-sec="vocab">字詞解釋（15）</button>
+    <button type="button" role="tab" id="tab-rhet" aria-selected="false" aria-controls="panel-quiz" data-sec="rhetorical">寫作手法（15）</button>
+  </div>
+
+  <div class="card" id="panel-quiz" role="tabpanel">
+    <div class="prog-row"><span id="secProgText">第 1 / 15 題</span><span id="secScoreText">本節答對：0</span></div>
+    <div class="bar" id="secBar" role="progressbar" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><div id="secFill"></div></div>
+    <form id="qform" onsubmit="return false" style="margin-top:12px">
+      <fieldset style="border:0;margin:0;padding:0">
+        <legend class="stem" id="stem"></legend>
+        <div id="opts"></div>
+      </fieldset>
+      <div id="fb" class="fb" hidden></div>
+      <button type="button" class="btn" id="checkBtn" disabled>檢查答案</button>
+      <div class="btn-row">
+        <button type="button" class="btn sec" id="nextBtn" hidden>下一題</button>
+        <button type="button" class="btn ok" id="secDoneBtn" hidden>完成本節</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card" id="secResult" hidden>
+    <h3 id="secResultTitle">本節完成</h3>
+    <p class="big" id="secFinal"></p>
+    <p id="secFinalMsg" class="muted" style="text-align:center"></p>
+    <div class="btn-row">
+      <button type="button" class="btn sec" id="retrySecBtn">重做本節</button>
+      <button type="button" class="btn" id="goNextSecBtn">下一節</button>
+    </div>
+    <button type="button" class="btn warn" id="submitEarlyBtn" style="margin-top:10px" hidden>交卷（已完成全部）</button>
+    <h3>答題回顧</h3>
+    <div id="secReview"></div>
+  </div>
+
+  <div class="card" id="finalResult" hidden>
+    <h3>全部完成・交卷</h3>
+    <p class="big" id="finalScore"></p>
+    <p id="finalDetail" style="text-align:center"></p>
+    <p id="submitMsg" class="note" hidden></p>
+    <div class="btn-row">
+      <button type="button" class="btn ok" id="submitBtn">交卷至老師試算表</button>
+      <button type="button" class="btn sec" id="retryAllBtn">全部重做</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7 影片 ========== -->
+<section class="sec" id="shipin">
+  <h2>七、影片｜寶寶老師陪你快速溫範文</h2>
+  <div class="card">
+    <p><a id="videoTitleLink" href="#" target="_blank" rel="noopener">寶寶老師陪你快速溫範文｜《月下獨酌》</a></p>
+    <div id="videoArea"></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">漢華中學中國語文科　｜　《月下獨酌》範文導讀　｜　供課堂投影及學生自學</footer>
+
+<script>
+(function () {
+"use strict";
+
+/* ===== 設定：預覽階段 GAS 留空；影片 ID 已由 VPA 確認 ===== */
+const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyZ78pmSwECd4JiAABOVPhjPjAwKaPqS4a-980nWDB_88znroLhxcQhPUtGde_KAyF9/exec";
+const YOUTUBE_ID = "rFjApOxt7gw";
+
+/* ===== 題庫：校本自測；o[0] 為正確答案 ===== */
+var Q_CONTENT = [{"s":"《月下獨酌》（其一）的作者是：","o":["李白","杜甫","王維","白居易"],"e":"教育局指定篇章：李白《月下獨酌》（其一）。"},{"s":"李白的字是：","o":["太白","子美","摩詰","樂天"],"e":"李白字太白，號青蓮居士。"},{"s":"後世因李白詩歌飄逸豪放，稱他為：","o":["詩仙","詩聖","詩佛","詩鬼"],"e":"李白獲譽為「詩仙」；杜甫為詩聖，王維為詩佛。"},{"s":"本詩寫作背景最接近：","o":["天寶年間李白於長安任翰林供奉，受權貴排擠而心情鬱悶","王維隱居輞川時的恬淡之作","杜甫安史之亂中流離之作","白居易諷諭朝政的新樂府"],"e":"據考證約作於天寶間，李白任翰林供奉，因受排擠而疏遠，寄情狂歌痛飲。"},{"s":"詩題「獨酌」的「酌」意思是：","o":["飲酒","斟茶","獨坐","賞月"],"e":"酌＝飲酒；獨酌＝獨自飲酒。"},{"s":"全詩圍繞哪個字着筆，卻又不止於孤獨？","o":["獨","春","影","漢"],"e":"題本「獨酌」，反覆圍繞「獨」字，終能自我排遣、不為「獨」所囿。"},{"s":"首二句「花間一壺酒，獨酌無相親」主要作用是：","o":["點出花間獨飲、無人相伴的處境","描寫長安宮廷宴會","記敘出使邊塞","議論治國之道"],"e":"開篇即寫獨酌無親近之人，點出孤獨處境。"},{"s":"「舉杯邀明月，對影成三人」中的「三人」指：","o":["詩人自己、明月、詩人的身影","三位酒友","皇帝、貴妃、詩人","月、花、酒"],"e":"教育局注：三人指李白、月和李白的影子。"},{"s":"「月既不解飲，影徒隨我身」之後，情感暫時復歸：","o":["孤獨（月不會飲酒，影只是空跟隨）","徹底歡喜","憤慨罵世","思鄉欲歸"],"e":"雖有月影相伴，月不解飲、影徒隨身，情感又復歸孤獨。"},{"s":"「暫伴月將影，行樂須及春」表達的態度是：","o":["暫時與月、影為伴，趁春日及時行樂","永遠拒絕飲酒","只待來年再飲","勸人戒酒修行"],"e":"及春＝趁着春天；暫伴月影，及時行樂。"},{"s":"「我歌月徘徊，我舞影零亂」描寫的是：","o":["詩人高歌起舞，月似徘徊、影隨零亂的同樂情景","戰場廝殺","宮廷早朝","農家耕作"],"e":"以擬人寫月聽歌徘徊、影伴舞而零亂，三人同樂。"},{"s":"「醒時同交歡，醉後各分散」的情感轉折是：","o":["未醉時與月影共樂，醉後又彼此分離，復露孤獨","自始至終只有歡樂","自始至終只有悲憤","完全無關情感"],"e":"醒同歡、醉分散，由喜轉悲，仍扣「獨」字。"},{"s":"尾聯「永結無情遊，相期邈雲漢」主要表達：","o":["與月影永結忘情之遊，相約於遙遠銀河，自我紓解的高情遠致","徹底絕望、永不飲酒","立刻回朝求官","責備月亮無情"],"e":"雖醉後分散，仍相約雲漢共續無情遊，見豁達與自我排遣。"},{"s":"本詩主旨最接近：","o":["寫邀月對影共飲，抒孤獨又能自我排遣，並流露對酒與月的鍾愛","純粹記錄飲酒份量","諷刺農民懶惰","描寫邊塞征戰"],"e":"透過邀月影共飲，表達孤獨與對月、酒的喜愛，終能不為現實所困。"},{"s":"全詩情感布置的特點是：","o":["悲喜交替（悲獨→喜成三人→悲不解飲→喜歌舞→悲分散→喜永結），圍繞「獨」字","只有單調悲傷","只有歡慶無轉折","完全沒有情感"],"e":"教育局賞析：悲、喜、悲、喜、悲、喜的情感轉折，終以喜結。"}];
+var Q_VOCAB = [{"s":"「獨酌無相親」的「相親」在此處指：","o":["可相親近的人（互相親愛、親近）","互相結婚","互相仇視","親戚的稱謂制度"],"e":"教育局注：相親＝互相親愛、親近；此處指可相親近的人。"},{"s":"「對影成三人」的「三人」指：","o":["李白、明月和李白的影子","三個客人","父、母、子","日、月、星"],"e":"教育局注：三人指李白、月和李白的影子。"},{"s":"「影徒隨我身」的「徒」意思是：","o":["徒然、空","徒弟","徒步行走","突然"],"e":"教育局注：徒＝徒然、空。"},{"s":"「暫伴月將影」的「將」意思是：","o":["和、共","將要","將軍","拿取"],"e":"教育局注：將＝和、共。「月將影」＝月和影。"},{"s":"「行樂須及春」的「及春」意思是：","o":["趁着春天","等到春天結束","春天已經過去","春天的別名"],"e":"教育局注：及春＝趁着春天。及＝趁着。"},{"s":"「我歌月徘徊」的「徘徊」意思是：","o":["往返迴旋、來回走動","突然消失","高飛遠走","靜止不動"],"e":"教育局注：徘徊＝往返迴旋、來回走動。"},{"s":"「醒時同交歡」的「交歡」意思是：","o":["一同歡樂","交換禮物","結為姻親","互相爭吵"],"e":"教育局注：交歡＝一同歡樂。醒時與月、影一起歡樂。"},{"s":"「永結無情遊」的「無情」在教育局注釋中指：","o":["忘情（泯除是非得失、物我之別的境界）","殘忍暴虐","毫無感情地仇恨","不講道理"],"e":"教育局注：無情即忘情，語出《莊子·德充符》，指泯除是非得失、物我之別。"},{"s":"「相期邈雲漢」的「相期」意思是：","o":["相約","互相期待失敗","定期考試","相同期限"],"e":"教育局注：相期＝相約。"},{"s":"「相期邈雲漢」的「邈」意思是：","o":["遙遠","渺小","模糊不清","親近"],"e":"教育局注：邈＝遙遠。粵音「寞」[mok6]。"},{"s":"「雲漢」的意思是：","o":["銀漢，即銀河","天上的雲彩與漢水","漢朝的雲氣","酒樓名稱"],"e":"教育局注：雲漢＝銀漢，即銀河。"},{"s":"「舉杯邀明月，對影成三人」語意可追溯至：","o":["陶潛《雜詩》「欲言無予和，揮杯勸孤影」","《論語》","杜甫《春望》","王維《山居秋暝》"],"e":"教育局注：語意出自陶潛《雜詩》。"},{"s":"「影徒隨我身」整句大意是：","o":["影子只是空自跟隨我的身體（不能真正對飲）","影子離開了詩人","影子變成了三個人","影子會主動勸酒"],"e":"影徒隨身——影子徒然跟隨，不解人事。"},{"s":"「暫伴」的「暫」在賞析中被認為妙在：","o":["點明與月影共樂只是暫時解脫，更見片刻之樂可貴","表示永遠結伴","表示從不結伴","表示季節名稱"],"e":"「暫」字錘鍊：暫得之樂因短暫而更可貴，並呼應後文「永結」。"},{"s":"「醉後各分散」的「分散」意思是：","o":["離散、別離","分數拆開","把酒分給眾人","軍隊潰敗"],"e":"教育局材料：分散＝離散、別離。"}];
+var Q_RHET = [{"s":"《月下獨酌》（其一）的詩體較接近：","o":["五言古詩","七言律詩","詞（長調）","駢文"],"e":"全詩十四句、五言，屬五言古詩（可轉韻），非近體律絕。"},{"s":"清人孫洙《唐詩三百首》評「題本獨酌，詩偏幻出三人」，指出的主要手法是：","o":["構思精奇（由獨幻出三人，反覆推勘愈形其獨）","完全寫實日記","刪除月與影","改寫成律詩對仗"],"e":"題獨而出三人，月影伴說，反覆推勘，愈形其獨。"},{"s":"將月亮、身影當作能歌能舞的伴侶，主要運用：","o":["擬人","誇張數字統計","設問句連續十次","通感寫味覺"],"e":"自「對影成三人」後，多以擬人寫月、影。"},{"s":"「我歌月徘徊，我舞影零亂」中月、影的表現屬於：","o":["擬人（月似聞歌徘徊，影隨舞而零亂）","直譯科學現象","公文用語","典故翻譯錯誤"],"e":"賦予月、影以人的反應與動作。"},{"s":"全詩情感「悲—喜—悲—喜—悲—喜」的布置，主要作用是：","o":["層層轉折，圍繞「獨」字又終能自我排遣","使詩意含糊不清","取消形象感","變成說明文"],"e":"悲喜轉折配合內容五部分，扣緊孤獨又見解脫。"},{"s":"層遞構圖的三個層次大致是：","o":["花間獨飲圖 → 邀月對影圖 → 三人同樂（歌舞）圖","只有戰爭三場","春夏秋三季氣象報告","三位詩人唱和"],"e":"教育局賞析：由獨飲，而邀飲，而同樂，層遞寫景構圖。"},{"s":"語言風格上，沈德潛所謂「純乎天籟」是指：","o":["語言淺近如話、脫口而出，卻意境高遠","全用生僻典故堆砌","全用駢四儷六","全用外語夾雜"],"e":"用字淺白近口語，又有錘鍊處（如暫、無情）。"},{"s":"「暫」字與後文「永結」的關係是：","o":["暫伴與永結呼應，由暫時解脫推向永恒相約","互相矛盾以致詩意不通","毫無關聯","只為湊韻"],"e":"暫得之樂與永結無情遊相呼應，反映寂寞中的嚮往。"},{"s":"「無情」與「月既不解飲，影徒隨我身」的呼應在於：","o":["月影不解人事（無情），卻因詩人有情而顯得有情","月影非常殘忍","詩人完全無情無欲","與前文無關"],"e":"無情呼應不解飲、徒隨身；他者無情，因我而有情。"},{"s":"「行樂須及春」體現的人生態度接近：","o":["及時行樂（趁美好時光）","絕對禁慾","長期計劃考科舉","隱居永不飲酒"],"e":"及春＝趁春；與暫伴月影同行樂。"},{"s":"尾聯「相期邈雲漢」把場景推向銀河，效果是：","o":["把情志提昇至高遠浪漫之境，見自我紓解","使全詩突然變成天文教材","取消孤獨主題","改寫為邊塞詩"],"e":"相約遙遠銀河，流露高情遠致。"},{"s":"本詩雖寫孤獨，最終給人的感覺較接近：","o":["豁達、能自我排遣，不為「獨」所囿","徹底沉淪絕望","冷酷無情","對酒深惡痛絕"],"e":"終以永結無情遊收束，見豁達與解脫。"},{"s":"「月」「影」「我」字在詩中多次出現而不覺重複，主要因為：","o":["率真如話、交互描寫，扣緊題旨又充滿感情","作者不會用同義詞","印刷錯誤","故意破壞音韻"],"e":"賞析：三字多有重複而不覺其重複，反覺率真。"},{"s":"本詩藝術手法組合最貼切的是：","o":["構思精奇＋擬人＋悲喜轉折＋層遞構圖＋淺近而錘鍊","只有三段論邏輯","純書信體","戲劇分場對話"],"e":"教育局重點：構思精奇、層遞構圖、語言淺近而錘鍊、擬人等修辭。"},{"s":"「醒時同交歡，醉後各分散」在章法上的作用是：","o":["由同樂轉入分離之悲，再逼出末二句永結之願","總結全詩主旨已畢無需下文","刪去月影意象","改為寫景收束"],"e":"醉後分散流露孤獨，緊接永結無情遊，筆鋒再轉。"}];
+
+var SECTIONS = {
+  content: { key: 'content', title: '內容理解', Q: Q_CONTENT },
+  vocab: { key: 'vocab', title: '字詞解釋', Q: Q_VOCAB },
+  rhetorical: { key: 'rhetorical', title: '寫作手法', Q: Q_RHET }
+};
+var SEC_ORDER = ['content', 'vocab', 'rhetorical'];
+var MAX_TOTAL = 45;
+var DRAFT_KEY = 'yuexiaduozhuo_daodu_draft';
+
+function shuffle(a) {
+  a = a.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function $(id) { return document.getElementById(id); }
+
+var state = {};
+SEC_ORDER.forEach(function (k) {
+  state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+});
+var currentSec = 'content';
+
+function studentInfo() {
+  return {
+    class: ($('cls').value || '').trim().toUpperCase(),
+    studentId: ($('sid').value || '').trim(),
+    name: ($('sname').value || '').trim()
+  };
+}
+function requireStudent() {
+  var s = studentInfo();
+  if (!s.class || !s.studentId || !s.name) {
+    alert('請先填寫班別、學號、姓名，再開始或交卷。');
+    $('studentCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    $('cls').focus();
+    return null;
+  }
+  return s;
+}
+
+function prepareOrder(secKey) {
+  var Q = SECTIONS[secKey].Q;
+  return Q.map(function (q) {
+    return { s: q.s, e: q.e, ans: q.o[0], o: shuffle(q.o) };
+  });
+}
+
+function startSection(secKey, force) {
+  currentSec = secKey;
+  var st = state[secKey];
+  if (force || !st.order) {
+    st.order = prepareOrder(secKey);
+    st.cur = 0;
+    st.answers = [];
+    st.finished = false;
+    st.score = 0;
+  }
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    var on = b.getAttribute('data-sec') === secKey;
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+    b.classList.toggle('active', on);
+  });
+  $('finalResult').hidden = true;
+  if (st.finished) {
+    $('panel-quiz').hidden = true;
+    showSecResult(secKey);
+  } else {
+    $('secResult').hidden = true;
+    $('panel-quiz').hidden = false;
+    showQuestion();
+  }
+  updateOverall();
+}
+
+function setSecScore(secKey) {
+  var st = state[secKey];
+  var s = 0;
+  for (var i = 0; i < st.answers.length; i++) {
+    if (st.answers[i] && st.answers[i].ok) s++;
+  }
+  st.score = s;
+  return s;
+}
+
+function updateOverall() {
+  var done = 0, totalScore = 0;
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var answered = st.answers.filter(function (a) { return a; }).length;
+    done += answered;
+    totalScore += setSecScore(k);
+  });
+  $('overallFill').style.width = (done / MAX_TOTAL * 100) + '%';
+  $('overallBar').setAttribute('aria-valuenow', String(done));
+  $('overallText').textContent = done + ' / ' + MAX_TOTAL + ' 題　總分 ' + totalScore;
+  $('scContent').textContent = state.content.score;
+  $('scVocab').textContent = state.vocab.score;
+  $('scRhet').textContent = state.rhetorical.score;
+
+  var allDone = SEC_ORDER.every(function (k) { return state[k].finished; });
+  if (allDone) {
+    $('submitEarlyBtn').hidden = false;
+    showFinal();
+  }
+}
+
+function showQuestion() {
+  var st = state[currentSec];
+  var q = st.order[st.cur];
+  var N = st.order.length;
+  st._picked = null;
+  st._checked = false;
+  $('stem').textContent = (st.cur + 1) + '. ' + q.s;
+  var box = $('opts');
+  box.innerHTML = '';
+  q.o.forEach(function (t, i) {
+    var l = document.createElement('label');
+    l.className = 'opt';
+    var r = document.createElement('input');
+    r.type = 'radio'; r.name = 'opt'; r.value = String(i);
+    var sp = document.createElement('span');
+    sp.textContent = String.fromCharCode(65 + i) + '. ' + t;
+    l.appendChild(r); l.appendChild(sp);
+    r.addEventListener('change', function () {
+      if (st._checked) return;
+      st._picked = i;
+      Array.prototype.forEach.call(box.children, function (c) { c.classList.remove('sel'); });
+      l.classList.add('sel');
+      $('checkBtn').disabled = false;
+    });
+    box.appendChild(l);
+  });
+  $('fb').hidden = true;
+  $('checkBtn').hidden = false;
+  $('checkBtn').disabled = true;
+  $('nextBtn').hidden = true;
+  $('secDoneBtn').hidden = true;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('secBar').setAttribute('aria-valuenow', String(answered));
+  $('secProgText').textContent = '第 ' + (st.cur + 1) + ' / ' + N + ' 題';
+  $('secScoreText').textContent = '本節答對：' + st.score;
+}
+
+function checkAnswer() {
+  var st = state[currentSec];
+  if (st._checked || st._picked === null) return;
+  st._checked = true;
+  $('checkBtn').disabled = true;
+  var q = st.order[st.cur];
+  var ok = q.o[st._picked] === q.ans;
+  st.answers[st.cur] = { ok: ok, pick: q.o[st._picked], ans: q.ans, idx: st.cur };
+  var labs = $('opts').children;
+  for (var i = 0; i < labs.length; i++) {
+    labs[i].querySelector('input').disabled = true;
+    if (q.o[i] === q.ans) labs[i].classList.add('ok');
+    else if (i === st._picked) labs[i].classList.add('bad');
+  }
+  var fb = $('fb');
+  fb.hidden = false;
+  fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+  fb.textContent = (ok ? '✔ 答對了！' : '✘ 答錯了。正確答案：' + q.ans) + '　解說：' + q.e;
+  setSecScore(currentSec);
+  updateOverall();
+  $('secScoreText').textContent = '本節答對：' + st.score;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  var N = st.order.length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('checkBtn').hidden = true;
+  if (st.cur < N - 1) $('nextBtn').hidden = false;
+  else $('secDoneBtn').hidden = false;
+}
+
+function nextQuestion() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  if (st.cur < st.order.length - 1) {
+    st.cur++;
+    showQuestion();
+  }
+}
+
+function finishSection() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  st.finished = true;
+  setSecScore(currentSec);
+  updateOverall();
+  showSecResult(currentSec);
+  saveDraft();
+  if (SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    showFinal();
+  }
+}
+
+function showSecResult(secKey) {
+  var st = state[secKey];
+  var N = SECTIONS[secKey].Q.length;
+  $('panel-quiz').hidden = true;
+  $('secResult').hidden = false;
+  $('secResultTitle').textContent = SECTIONS[secKey].title + '・本節完成';
+  $('secFinal').textContent = '得分：' + st.score + ' / ' + N;
+  var p = st.score / N;
+  $('secFinalMsg').textContent = p >= 0.8 ? '表現出色，繼續保持！' : p >= 0.5 ? '不錯，請重溫答錯的題目。' : '請細閱課文及解說，再試一次。';
+  var rv = $('secReview');
+  rv.innerHTML = '';
+  st.order.forEach(function (q, i) {
+    var a = st.answers[i];
+    if (!a) return;
+    var d = document.createElement('div');
+    d.className = 'rv';
+    var t = document.createElement('div');
+    t.className = 't';
+    t.textContent = (i + 1) + '. ' + q.s;
+    var r = document.createElement('div');
+    r.className = a.ok ? 'c' : 'w';
+    r.textContent = (a.ok ? '✔ 你的答案：' : '✘ 你的答案：') + a.pick + (a.ok ? '' : '｜正確答案：' + q.ans);
+    var e = document.createElement('div');
+    e.className = 'muted';
+    e.textContent = '解說：' + q.e;
+    d.appendChild(t); d.appendChild(r); d.appendChild(e);
+    rv.appendChild(d);
+  });
+  var idx = SEC_ORDER.indexOf(secKey);
+  var nextKey = idx < SEC_ORDER.length - 1 ? SEC_ORDER[idx + 1] : null;
+  $('goNextSecBtn').hidden = !nextKey;
+  $('goNextSecBtn').textContent = nextKey ? '前往「' + SECTIONS[nextKey].title + '」' : '';
+  $('goNextSecBtn').onclick = nextKey ? function () {
+    startSection(nextKey, false);
+    $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } : null;
+  $('submitEarlyBtn').hidden = !SEC_ORDER.every(function (k) { return state[k].finished; });
+}
+
+function wrongSummary() {
+  var parts = [];
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var wrong = [];
+    st.answers.forEach(function (a, i) {
+      if (a && !a.ok) wrong.push(i + 1);
+    });
+    if (wrong.length) parts.push(SECTIONS[k].title + '錯題:' + wrong.join(','));
+  });
+  return parts.join('；') || '全對';
+}
+
+function buildPayload(stu) {
+  var sc = state.content.score;
+  var sv = state.vocab.score;
+  var sr = state.rhetorical.score;
+  var total = sc + sv + sr;
+  return {
+    timestamp: new Date().toISOString(),
+    class: stu.class,
+    studentId: stu.studentId,
+    name: stu.name,
+    scoreContent: sc,
+    scoreVocab: sv,
+    scoreRhetorical: sr,
+    scoreTotal: total,
+    maxTotal: MAX_TOTAL,
+    percent: Math.round(total / MAX_TOTAL * 1000) / 10,
+    answersSummary: wrongSummary(),
+    userAgent: navigator.userAgent || ''
+  };
+}
+
+function showFinal() {
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) return;
+  $('finalResult').hidden = false;
+  var total = state.content.score + state.vocab.score + state.rhetorical.score;
+  $('finalScore').textContent = '總分：' + total + ' / ' + MAX_TOTAL;
+  $('finalDetail').innerHTML =
+    '內容理解 ' + state.content.score + '/15　｜　字詞解釋 ' + state.vocab.score +
+    '/15　｜　寫作手法 ' + state.rhetorical.score + '/15<br>正確率 ' +
+    (Math.round(total / MAX_TOTAL * 1000) / 10) + '%';
+  saveDraft();
+}
+
+function saveDraft() {
+  try {
+    var stu = studentInfo();
+    var draft = {
+      student: stu,
+      scores: {
+        content: state.content.score,
+        vocab: state.vocab.score,
+        rhetorical: state.rhetorical.score
+      },
+      finished: SEC_ORDER.map(function (k) { return { k: k, done: state[k].finished, score: state[k].score }; }),
+      summary: wrongSummary(),
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+  } catch (e) {}
+}
+
+function submitToSheet() {
+  var stu = requireStudent();
+  if (!stu) return;
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    alert('請先完成三個部分的全部題目，再交卷。');
+    return;
+  }
+  var payload = buildPayload(stu);
+  saveDraft();
+  var msg = $('submitMsg');
+  msg.hidden = false;
+
+  if (!GAS_WEBAPP_URL) {
+    msg.textContent = '成績已暫存在本機。目前未能上傳至老師試算表，請稍後再試或向老師查詢。';
+    return;
+  }
+  msg.textContent = '正在上傳成績…';
+  $('submitBtn').disabled = true;
+  fetch(GAS_WEBAPP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(function () {
+    msg.textContent = '✔ 已送出交卷請求。若老師試算表「交卷紀錄」出現新列，即表示成功。';
+    $('submitBtn').disabled = false;
+  }).catch(function () {
+    msg.textContent = '✘ 上傳失敗，請檢查網絡後再試。本機草稿已保存。';
+    $('submitBtn').disabled = false;
+  });
+}
+
+var yuyiToggle = $('yuyiToggle');
+var yuyiBody = $('yuyiBody');
+if (yuyiToggle && yuyiBody) {
+  yuyiToggle.addEventListener('click', function () {
+    var hide = !yuyiBody.hidden;
+    yuyiBody.hidden = hide;
+    yuyiToggle.setAttribute('aria-expanded', hide ? 'false' : 'true');
+    yuyiToggle.textContent = hide ? '顯示語譯' : '隱藏語譯';
+  });
+}
+
+function renderVideo() {
+  var area = $('videoArea');
+  var link = $('videoTitleLink');
+  var title = '寶寶老師陪你快速溫範文｜《月下獨酌》';
+  if (YOUTUBE_ID) {
+    link.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(YOUTUBE_ID);
+    area.innerHTML = '<div class="video-wrap"><iframe src="https://www.youtube.com/embed/' +
+      encodeURIComponent(YOUTUBE_ID) + '" title="' + title + '" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>';
+  } else {
+    link.href = '#shipin';
+    link.removeAttribute('target');
+    area.innerHTML = '<div class="video-box"><strong>影片即將上線</strong><span>' + title + '</span></div>';
+  }
+}
+
+document.querySelectorAll('.tabs button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    startSection(b.getAttribute('data-sec'), false);
+  });
+});
+$('checkBtn').addEventListener('click', checkAnswer);
+$('nextBtn').addEventListener('click', nextQuestion);
+$('secDoneBtn').addEventListener('click', finishSection);
+$('retrySecBtn').addEventListener('click', function () {
+  startSection(currentSec, true);
+  $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+$('submitBtn').addEventListener('click', submitToSheet);
+$('submitEarlyBtn').addEventListener('click', function () {
+  showFinal();
+  $('finalResult').scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+$('retryAllBtn').addEventListener('click', function () {
+  if (!confirm('確定全部重做？目前得分將重置。')) return;
+  SEC_ORDER.forEach(function (k) {
+    state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+  });
+  $('finalResult').hidden = true;
+  startSection('content', true);
+  updateOverall();
+});
+
+try {
+  var d = localStorage.getItem(DRAFT_KEY);
+  if (d) {
+    var draft = JSON.parse(d);
+    if (draft.student) {
+      if (draft.student.class) $('cls').value = draft.student.class;
+      if (draft.student.studentId) $('sid').value = draft.student.studentId;
+      if (draft.student.name) $('sname').value = draft.student.name;
+    }
+  }
+} catch (e) {}
+
+renderVideo();
+updateOverall();
+startSection('content', false);
+
+})();
+</script>
+</body>
+</html>
